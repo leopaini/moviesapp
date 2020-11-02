@@ -1,0 +1,82 @@
+.navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #171a1f;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.navContent {
+  display: flex;
+  margin: 0 auto;
+  padding: 1em 2em;
+  max-width: 1280px;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+}
+
+.logo strong {
+  color: #f75757;
+  font-weight: 700;
+}
+
+.search {
+  flex-grow: 1;
+  display: flex;
+  padding-left: 5em;
+  box-sizing: border-box;
+  justify-content: flex-end;
+}
+
+.searchInput {
+  all: unset;
+  width: 100%;
+  color: #fff;
+  margin-right: 1em;
+  font-size: 1.25em;
+  padding: 0.25em 0.5em;
+  background: #0d0f12;
+}
+
+.button {
+  all: unset;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.5em 1.5em;
+  border-radius: 1.5em;
+  border: 1px solid #fff;
+  transition: background 250ms ease;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 767px) {
+  .navContent {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .logo {
+    font-size: 2.25em;
+    padding: 0.5em 1em;
+  }
+
+  .search {
+    width: 100%;
+    padding: 1em 1em;
+    box-sizing: border-box;
+    border-top: 1px solid #404246;
+  }
+}
